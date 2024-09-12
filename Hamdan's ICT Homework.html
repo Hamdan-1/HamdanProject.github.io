@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-AE">
+<head>
+    <title>ICT Homework By Hamdan Esmail</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Body and page styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the container with sidebars */
+        .page-container {
+            display: flex;
+        }
+
+        /* Left and Right sidebars */
+        .sidebar {
+            background-color: #f0f0f0; /* Light grey background */
+            width: 150px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            padding-top: 50px;
+        }
+
+        .left-sidebar {
+            left: 0;
+        }
+
+        .right-sidebar {
+            right: 0;
+        }
+
+        /* Styling for the main content */
+        .main-content {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 700px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        /* Styling for the image inside the sidebars */
+        .sidebar img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Form styling */
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Left sidebar -->
+        <div class="sidebar left-sidebar">
+            <img src="https://t3.ftcdn.net/jpg/04/91/76/62/360_F_491766294_h4j7LbW2YgfbNHhq7F8GboIc1XyBSEY5.jpg" alt="University Logo">
+        </div>
+
+        <!-- Main content area -->
+        <div class="main-content">
+            <h1 class="center-text">University Tour Registration</h1>
+
+            <form>
+                <!-- Name input -->
+                <div class="form-group">
+                    <label for="name">Enter your full name:</label>
+                    <input type="text" id="name" name="full_name" placeholder="First and Last Name" required>
+                </div>
+
+                <!-- Gender radio buttons -->
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <!-- Course selection with checkboxes -->
+                <div class="form-group">
+                    <label>Which course do you wish to attend?</label>
+                    <input type="checkbox" id="cs" name="course" value="Computer Science">
+                    <label for="cs">Computer Science</label><br>
+                    <input type="checkbox" id="mechatronics" name="course" value="Mechatronics">
+                    <label for="mechatronics">Mechatronics</label><br>
+                    <input type="checkbox" id="physics" name="course" value="Physics">
+                    <label for="physics">Physics</label>
+                </div>
+
+                <!-- Date selector -->
+                <div class="form-group">
+                    <label for="tour-date">Select Date of Tour:</label>
+                    <input type="date" id="tour-date" name="tour_date" required>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+
+                <!-- Phone number input -->
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group">
+                    Accept Terms & Conditions: 
+                    <input name="T&C_Chx" type="checkbox" required>
+                </div>
+
+                <!-- Submit button -->
+                <div class="form-group">
+                    <input name="submit_T&C-btn" type="submit" value="Submit Registration">
+                </div>
+            </form>
+        </div>
+
+        <!-- Right sidebar -->
+        <div class="sidebar right-sidebar">
+            <img src="https://t3.ftcdn.net/jpg/04/91/76/62/360_F_491766294_h4j7LbW2YgfbNHhq7F8GboIc1XyBSEY5.jpg" alt="University Logo">
+        </div>
+    </div>
+</body>
+</html>
